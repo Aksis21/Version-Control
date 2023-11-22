@@ -15,3 +15,5 @@ void draw(){
     particles.add(new Particle(mouseX, mouseY));
   }
 }
+
+//solo part
