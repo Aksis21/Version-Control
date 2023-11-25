@@ -8,13 +8,14 @@ void setup(){
 
 void draw(){
   background(0);
-  for (int i = particles.size()-1; i >= 0; i--){
-    particles.get(i).update();
-    particles.get(i).display();
-    off = particles.get(i).offScreen();
+
+  for (int j = 0; j < particles.size(); j++){
+    particles.get(j).update();
+    particles.get(j).display();
+    off = particles.get(j).offScreen();
     if(off)
     {
-      particles.remove(i);
+      particles.remove(j);
     }
   }
   if(mousePressed == true) {
