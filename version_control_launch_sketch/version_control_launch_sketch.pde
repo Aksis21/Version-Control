@@ -16,4 +16,4 @@ void draw(){
   }
 }
 
-//solo part
+//duo part
